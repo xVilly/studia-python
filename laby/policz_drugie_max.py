@@ -13,10 +13,10 @@ def policz_drugie_max():
         while c < ilosc_liczb:
             liczba = float(input('Podaj liczbe: '))
             if liczba > max:
-                drugie_max = max
+                o_max = max
                 max = liczba
-            elif liczba > drugie_max:
-                drugie_max = liczba
+                if max != drugie_max:
+                    drugie_max = o_max
             c += 1
         print(f'Z wszystkich podanych liczb najwieksza byla {max}')
         if drugie_max == max:
